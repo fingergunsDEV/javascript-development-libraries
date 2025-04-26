@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game Development Libraries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Top JavaScript Libraries for Game Development</h1>
+        <p>Interactive guide to the best frameworks and engines for web-based games</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="show-all" class="active">All</button>
+            <button id="filter-2d">2D</button>
+            <button id="filter-3d">3D</button>
+            <button id="filter-xr">XR</button>
+        </div>
+
+        <div class="library-grid">
+            <!-- Phaser -->
+            <div class="library-card" data-type="2D">
+                <div class="card-header">
+                    <h2>Phaser</h2>
+                    <div class="tags">
+                        <span class="tag">2D</span>
+                        <span class="tag">Popular</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> Complete 2D browser-based games</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Robust game loop, physics, and animation systems</li>
+                        <li>Huge community and documentation</li>
+                        <li>Supports WebGL and Canvas rendering</li>
+                        <li>Mobile and desktop ready</li>
+                    </ul>
+                    <p><strong>Use case:</strong> Platformers, puzzle games, side scrollers</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://phaser.io" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="phaser">See Demo</button>
+                </div>
+            </div>
+
+            <!-- Three.js -->
+            <div class="library-card" data-type="3D">
+                <div class="card-header">
+                    <h2>Three.js</h2>
+                    <div class="tags">
+                        <span class="tag">3D</span>
+                        <span class="tag">WebGL</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> 3D games and simulations</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Abstraction over WebGL with intuitive 3D rendering</li>
+                        <li>Built-in support for lights, shadows, textures, and cameras</li>
+                        <li>Massive ecosystem (editors, loaders, plugins)</li>
+                    </ul>
+                    <p><strong>Use case:</strong> First-person, space simulators, 3D UIs</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://threejs.org" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="three">See Demo</button>
+                </div>
+            </div>
+
+            <!-- Babylon.js -->
+            <div class="library-card" data-type="3D">
+                <div class="card-header">
+                    <h2>Babylon.js</h2>
+                    <div class="tags">
+                        <span class="tag">3D</span>
+                        <span class="tag">WebGPU</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> High-performance 3D games</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Full game engine (physics, PBR materials, XR support)</li>
+                        <li>WebGPU support</li>
+                        <li>Visual editor + playground</li>
+                    </ul>
+                    <p><strong>Use case:</strong> Full 3D games, metaverse apps, VR/AR experiences</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.babylonjs.com" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="babylon">See Demo</button>
+                </div>
+            </div>
+
+            <!-- PixiJS -->
+            <div class="library-card" data-type="2D">
+                <div class="card-header">
+                    <h2>PixiJS</h2>
+                    <div class="tags">
+                        <span class="tag">2D</span>
+                        <span class="tag">Fast</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> Fast 2D rendering in HTML5</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Ultra-performant WebGL rendering engine</li>
+                        <li>Ideal for interactive interfaces, sprites, and effects</li>
+                        <li>Lightweight compared to Phaser</li>
+                    </ul>
+                    <p><strong>Use case:</strong> Mobile games, interactive graphics, UI-heavy games</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://pixijs.com" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="pixi">See Demo</button>
+                </div>
+            </div>
+
+            <!-- WebXR -->
+            <div class="library-card" data-type="XR">
+                <div class="card-header">
+                    <h2>WebXR</h2>
+                    <div class="tags">
+                        <span class="tag">XR</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> Immersive VR/AR web experiences</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Native browser API for XR experiences</li>
+                        <li>Device-agnostic access to VR/AR hardware</li>
+                        <li>Spatial tracking and controller input</li>
+                        <li>Works with Three.js, Babylon.js, etc.</li>
+                    </ul>
+                    <p><strong>Use case:</strong> Cross-platform VR/AR applications, immersive web content</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="webxr">See Demo</button>
+                </div>
+            </div>
+
+            <!-- A-Frame -->
+            <div class="library-card" data-type="XR">
+                <div class="card-header">
+                    <h2>A-Frame</h2>
+                    <div class="tags">
+                        <span class="tag">XR</span>
+                        <span class="tag">Declarative</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Best for:</strong> Quick VR/AR development with HTML</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>HTML-based declarative approach to VR</li>
+                        <li>Based on Three.js with entity-component model</li>
+                        <li>Large ecosystem of components and assets</li>
+                        <li>No WebGL knowledge required</li>
+                    </ul>
+                    <p><strong>Use case:</strong> Rapid VR prototyping, 360° experiences, WebXR applications</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://aframe.io" target="_blank" class="btn">Visit Website</a>
+                    <button class="demo-btn" data-library="aframe">See Demo</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="demo-container" class="hidden">
+        <div class="demo-header">
+            <h3 id="demo-title">Library Demo</h3>
+            <button id="close-demo">×</button>
+        </div>
+        <div id="demo-content"></div>
+    </div>
+
+    <footer>
+        <p>Compare features, performance, and use cases to choose the right library for your game project</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js"
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
